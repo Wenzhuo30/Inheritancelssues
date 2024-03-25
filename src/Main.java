@@ -8,5 +8,9 @@ public class Main {
         pastEvent.calculateEventCost();
         pastEvent.setPaymentDetails("Pending", true);
         System.out.println(pastEvent);
+
+        PastEvents pastEvents = new PastEvents();
+        pastEvents.paymentDetails(0, null, false);
+        System.out.println(pastEvents);
     }
 }
